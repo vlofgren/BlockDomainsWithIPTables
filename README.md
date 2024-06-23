@@ -6,6 +6,6 @@ It's not intended for e.g. setting up a parental filter, I mostly use it to rest
 
 The utility adds filters to the OUTPUT chain in iptables and ip6tables that prevents a specified user from accessing any of the IPs associated with a domain.
 
-You also to edit `main.py` to configure the users and restrictions.
+You also to edit `main.py` to configure the users and restrictions. The command needs to be run as root to work.  Please make sure you read and understand what it does.  You may need to install 'ipset' if it's not installed by default.  After installing it, you may need to reboot.
 
 You should have a basic understanding of iptables to use this utility, although unless you've added a script that persists the IPtables changes, they should normally reset each time you restart.
